@@ -13,6 +13,9 @@ export default defineConfig({
             },
         }) as unknown as Plugin,
     ],
+    server: {
+        port: 3000,
+    },
 
     build: {
         // outDir: resolve(__dirname, 'dist'),

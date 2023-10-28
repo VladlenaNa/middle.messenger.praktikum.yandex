@@ -4,6 +4,7 @@ import { resolve } from 'path';
 
 const app = express();
 const PORT = 3000;
+const __dirname = resolve();
 
 app.use(express.static(resolve(__dirname, 'src')));
 
