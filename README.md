@@ -5,10 +5,10 @@
 Проект является учебным в рамках курса от Яндекс Практикума. 
 
 Стэк:
-- typescript
-- saas
-- handlebars
-- vite
+- Typescript
+- Saas
+- Handlebars
+- Vite
 
 Установка:
 - Устанавливаем зависимости npm i
