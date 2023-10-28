@@ -1,9 +1,11 @@
 {{#> layouts/page title="Login Page"}}
     <div class="login-page">
       {{#card}}
-        {{> input/input type="email" text="Email" }}
-        {{> input/input type="password" text="Пароль" }}
-        {{> button/button classes="button__solid" text="Авторизоваться" }}
+        <form class="login__form">
+          {{> input/input type="email" text="Email" }}
+          {{> input/input type="password" text="Пароль" }}
+          {{> button/button classes="button__solid" text="Авторизоваться" type="submit"}}
+        </form>
         {{> button/button classes="button__outline" text="Нет аккаунта" }}
       {{/card}}
     </div>
