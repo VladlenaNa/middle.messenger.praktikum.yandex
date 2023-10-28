@@ -1,0 +1,15 @@
+{{#> layouts/page title="Login Page"}}
+    <div class="auth-page">
+      {{#card}}
+        {{> input/input type="email" text="Email" name="email"}}
+        {{> input/input type="text" text="Логин" name="login"}}
+        {{> input/input type="text" text="Имя" name="first_name"}}
+        {{> input/input type="text" text="Фамилия" name="second_name"}}
+        {{> input/input type="text" text="Телефон" name="phone"}}
+        {{> input/input type="password" text="Пароль" name="password"}}
+        {{> input/input type="password" text="Password one more" name="password"}}
+        {{> button/button classes="button__solid" text="Зарегистрироваться" }}
+        {{> button/button classes="button__outline" text="Войти" }}
+      {{/card}}
+    </div>
+{{/ layouts/page}}

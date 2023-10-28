@@ -1,0 +1,15 @@
+{{#> layouts/page title="Edit Profile Page"}}
+    <div class="editProfile-page">
+        {{#> profileHeader/profileHeader}}
+        {{/profileHeader/profileHeader}}
+        
+        <div class="profile__inputs-wrapper">
+            {{> profile/profile disabled=false}}
+        </div>
+
+        <div class="profile__footer">
+            <img class="backButton" src="/backButton.svg" alt="back">
+            {{#> button/button classes="button__solid saveButton" text="Сохранить"}} {{/ button/button}}
+        </div>
+    </div>
+{{/ layouts/page}}

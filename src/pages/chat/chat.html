@@ -1,0 +1,33 @@
+{{#> layouts/page title="Login Page"}}
+    <div class="chat-page">
+        <div class="chat-column">
+            <div class="chat-column__header">
+                {{#> menu/menu}}{{/ menu/menu}}
+                {{#> searchForm/searchForm}}{{/ searchForm/searchForm}}
+            </div>
+            <div class="chat-column__list">
+                {{#> chatListItem/chatListItem}}{{/ chatListItem/chatListItem}}
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat__header">
+                {{#> avatar/avatar}}{{/ avatar/avatar}}
+                <div class="name">
+                    Влада
+                </div>
+            </div>
+            <div class="chat__content">
+                {{#> message/message classes="ownMessage" text="Привет, как дела?" time="15:24"}}
+                {{/ message/message}}
+                {{#> message/message classes="notOwnMessage" text="Хорошо. Как у тебя?" time="18:24"}}
+                {{/ message/message}}
+            </div>
+            <div class="chat__footer">
+                <img class="attachButton" src="/attach.svg" width="30" height="30" alt="attach">
+                {{#> inputChat/inputChat type="text" text="Введите сообщение" name="message"}}
+                {{/ inputChat/inputChat}}
+                <img class="sendButton" src="/sendButton.svg" width="30" height="30" alt="send">
+            </div>
+        </div>
+    </div>
+{{/ layouts/page}}

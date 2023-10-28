@@ -1,0 +1,24 @@
+.info {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+
+    .info__header {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .info__description{
+        font-size: 20px;
+    }
+    
+    a {
+        margin-top: 30px;
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
