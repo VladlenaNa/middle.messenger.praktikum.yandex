@@ -1,7 +1,11 @@
-import { resolve } from 'path/posix';
+import { resolve, dirname} from 'path';
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars';
 import card from "./src/layouts/card/card";
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname =  dirname(__filename);
 
 export default defineConfig({
     root: resolve(__dirname, 'src'),
@@ -11,7 +15,7 @@ export default defineConfig({
             helpers: {
                 card,
             },
-        }) as unknown as Plugin,
+        }),
     ],
     server: {
         port: 3000,
