@@ -1,0 +1,35 @@
+.message {
+    width: 100%;
+    margin: 30px 0 0;
+    
+    .message__content {
+        max-width: 400px;
+        margin: 0;
+        padding: 15px;
+        color: black;
+        border-radius: 10px;
+
+        time {
+            margin: 10px 0 0 10px;
+            float: right;
+            font-size: 12px;
+        }
+    }
+}
+
+.ownMessage .message__content{
+    background-color: var(--ownMessage-bg);
+    float: right;
+
+    time {
+        color: var(--ownMessage-time-color);
+    }
+}
+
+.notOwnMessage .message__content {
+    background-color: var(--notOwnMessage-bg);
+
+    time {
+        color: var(--notOwnMessage-time-color);
+    }
+}
