@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "start": "npm run build & node server.js",
     "eslint": "npx eslint .",
-    "stylelint": "npx stylelint \"**/*.scss\""
+    "stylelint": "npx stylelint \"**/*.scss\"",
+    "server": "npm run build && node ./server.js"
   },
   "devDependencies": {
     "@types/uuid": "^9.0.7",
