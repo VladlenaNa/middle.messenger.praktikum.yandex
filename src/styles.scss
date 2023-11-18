@@ -32,6 +32,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 .link a {
   color: black;
 }
@@ -46,3 +47,28 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
+=======
+@import "./variables/variables.scss";
+@import "./layouts/card/card.scss";
+@import "./partials/input/input.scss";
+@import "./partials/button/button.scss";
+@import "./partials/chatListItem/chatListItem.scss";
+@import "./partials/menu/menu.scss";
+@import "./partials/searchForm/searchForm.scss";
+@import "./partials/profile/profile.scss";
+@import "./partials/chatListItem/chatListItem.scss";
+@import "./partials/error/error.scss";
+@import "./partials/avatar/avatar.scss";
+@import "./partials/message/message.scss";
+@import "./partials/inputChat/inputChat.scss";
+@import "./partials/profileHeader/profileHeader.scss";
+@import "./pages/profile/profile.scss";
+@import "./pages/editProfile/editProfile.scss";
+@import "./pages/editPassword/editPassword.scss";
+@import "./pages/login/login.scss";
+@import "./pages/register/register.scss";
+@import "./pages/chat/chat.scss";
+@import "./pages/404Error/404Error.scss";
+@import "./pages/5Error/5Error.scss";
+@import "./partials/layouts/page.scss";
+>>>>>>> main
