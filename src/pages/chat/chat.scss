@@ -1,13 +1,13 @@
 .chat-page {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     box-sizing: border-box;
 
     .chat-column {
         width: 420px;
         height: 100%;
-        background-color: #ffffff;
+        background-color: #fff;
         border-right: 1px solid var(--border-color);
 
 
@@ -21,7 +21,7 @@
             border-radius: 20px 20px 0;
             margin-top: -20px;
             padding: 15px 0 0;
-            background-color: #ffffff;
+            background-color: #fff;
             box-sizing: border-box;
         }
     }
@@ -30,7 +30,7 @@
         width: calc(100% - 300px);
         box-sizing: border-box;
         padding: 30px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(255 255 255);
 
         .chat__header {
             display: flex;
@@ -74,9 +74,19 @@
             align-items: center;
             gap: 10px;
 
-            .attachButton, .sendButton {
+            .attachButton, .sendMsg-button {
                 cursor: pointer;
             }
+
+            .sendMsg-button {
+                background: none;
+                border: transparent;
+                width: 30px;
+            }
+        }
+
+        .input-error {
+            border: 1px solid rgb(187 4 4)
         }
 
     }

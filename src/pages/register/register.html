@@ -1,17 +1,9 @@
-{{#> layouts/page title="Login Page"}}
-    <div class="register-page">
-      {{#card}}
-        <form class="register__form">
-          {{> input/input type="email" text="Email" name="email" id="email"}}
-          {{> input/input type="text" text="Логин" name="login" id="login"}}
-          {{> input/input type="text" text="Имя" name="first_name" id="first_name"}}
-          {{> input/input type="text" text="Фамилия" name="second_name" id="second_name"}}
-          {{> input/input type="text" text="Телефон" name="phone" id="phone"}}
-          {{> input/input type="password" text="Пароль" name="password" id="password"}}
-          {{> input/input type="password" text="Password one more" name="passwordAgain" id="passwordAgain"}}
-          {{> button/button classes="button__solid" text="Зарегистрироваться" type="submit"}}
-        </form> 
-        {{> button/button classes="button__outline" text="Войти" }}
-      {{/card}}
-    </div>
-{{/ layouts/page}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script src="./register.ts" type="module"></script>
+  </head>
+  <body> 
+      <main role="main" id="main"></main>
+  </body>
+</html>

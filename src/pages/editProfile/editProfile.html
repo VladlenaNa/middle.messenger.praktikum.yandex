@@ -1,15 +1,9 @@
-{{#> layouts/page title="Edit Profile Page"}}
-    <div class="editProfile-page">
-        {{#> profileHeader/profileHeader}}
-        {{/profileHeader/profileHeader}}
-        
-        <div class="profile__inputs-wrapper">
-            {{> profile/profile disabled=false}}
-        </div>
-
-        <div class="profile__footer">
-            <img class="backButton" src="/image/backButton.svg" alt="back">
-            {{#> button/button classes="button__solid saveButton" text="Сохранить"}} {{/ button/button}}
-        </div>
-    </div>
-{{/ layouts/page}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script src="./editProfile.ts" type="module"></script>
+  </head>
+  <body> 
+      <main role="main" id="main"></main>
+  </body>
+</html>

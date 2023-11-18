@@ -1,33 +1,36 @@
 .editProfile-page {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
    
     .profile__inputs-wrapper {
-        width: 45%;
+        width: 400px;
         margin-top: 60px;
     }
 
-    .inputProfile {
-        margin-bottom: 15px;
+    .inputsProfile label {
+        margin-top: 15px;
+    }
+
+    .inputsProfile label .inputProfile-field {
+        margin-bottom: 2px;
     }
 
     .profile__footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 100%;
 
         .backButton {
-            margin: 10px 0;
+            margin: 20px 0 10px;
         }
 
         .saveButton {
             width: 200px;
         }
-        
     }
 }
