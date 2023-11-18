@@ -156,8 +156,6 @@ export default class Block {
             }
         });
 
-        console.log(fragment.innerHTML, 'elem')
-
         return fragment.content;
     }
   
@@ -211,9 +209,6 @@ export default class Block {
     }
     
     _makePropsProxy(props: Props) {
-        // Можно и так передать this
-        // Такой способ больше не применяется с приходом ES6+
-    
         const self = this;
 
         return new Proxy(props, {
@@ -224,6 +219,7 @@ export default class Block {
             set(target, prop: string, value: unknown) {
                 if (target[prop] !== value) {
                     target[prop] = value;
+                    // eslint-disable-next-line 
                     self.eventBus().emit(Block.EVENTS.FLOW_CDU, { ...target }, target);
                     self._setUpdate = true;
                 }

@@ -2,7 +2,6 @@ import Block from "../../core/Block";
 import { tmpl } from "./404Error.tmpl";
 import Error from "./../../partials/error";
 import { renderDOM } from "../../core/renderDOM";
-import "../../styles.scss";
 
 export class Error404Page extends Block {
     constructor() {

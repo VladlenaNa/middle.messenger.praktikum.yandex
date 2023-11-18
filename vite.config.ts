@@ -1,6 +1,8 @@
 import { resolve } from "path";
 import { defineConfig, Plugin } from "vite"
-import handlebars from "vite-plugin-handlebars";
+// import handlebars from "vite-plugin-handlebars";
+import checker from "vite-plugin-checker";
+import eslint from "vite-plugin-eslint";
 // import { fileURLToPath } from "url";
 
 // const __filename = fileURLToPath(import.meta.url)
@@ -9,9 +11,13 @@ import handlebars from "vite-plugin-handlebars";
 export default defineConfig({
     root: resolve(__dirname, "src"),
     plugins: [
-        handlebars({
-            partialDirectory: resolve(__dirname, "src/partials"),
-        }) as unknown as Plugin,
+        // handlebars({
+        //     partialDirectory: resolve(__dirname, "src/partials"),
+        // }) as unknown as Plugin,
+        checker({
+            typescript: true
+        }),
+        eslint()
     ],
     server: {
         port: 3000,

@@ -1,4 +1,4 @@
-import './styles.scss'
+import "./styles.scss"
 
 //просто чтобы ошибку в tsconfig не выдавало
-console.log('content loaded')
+console.log("content loaded")

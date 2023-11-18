@@ -12,7 +12,8 @@
       "eol-last": "error",
       "quotes": ["error", "double"],
       "padded-blocks": "off",
-      "@typescript-eslint/no-explicit-any": "off"
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-this-alias": "off"
     },
     "settings": {
       "import/resolver": {
