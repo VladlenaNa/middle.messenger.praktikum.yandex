@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { defineConfig, Plugin } from "vite"
+import { defineConfig } from "vite"
 // import handlebars from "vite-plugin-handlebars";
 import checker from "vite-plugin-checker";
 import eslint from "vite-plugin-eslint";
