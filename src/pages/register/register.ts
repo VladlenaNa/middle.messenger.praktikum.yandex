@@ -4,7 +4,6 @@ import Button from "./../../partials/button";
 import { inputs, iRegisterInputs } from "./registerInputs"
 import { inputErrorMsgs } from "../../utils/constants";
 import { renderDOM } from "../../core/renderDOM";
-import "../../styles.scss";
 
 export class RegisterPage extends Block {
     registerInputs = inputs;
@@ -31,7 +30,6 @@ export class RegisterPage extends Block {
 
                 Object.keys(inputs).forEach((key) => (inputs[key as keyof iRegisterInputs].validateInput()));
                 
-                console.log(inputs.passwordInput.getValue())
                 if (inputs.passwordInput.getValue() !== inputs.againPasswordInput.getValue()) {
                     const errorMsg = document.createElement("span");
                     errorMsg.classList.add("error-msg");

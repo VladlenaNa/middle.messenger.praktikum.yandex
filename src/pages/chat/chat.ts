@@ -8,7 +8,6 @@ import Input from "./../../partials/input";
 import { renderDOM } from "../../core/renderDOM";
 import Button from "./../../partials/button";
 import Message from "./../../partials/message";
-import "../../styles.scss";
 
 const messageInput = new Input({
     class: "inputChat-field",
@@ -55,7 +54,8 @@ export class ChatPage extends Block {
                         if (msg?.length === 0) {
                             messageInput.element?.classList.add("input-error")
                         }
-                        console.log("message:", messageInput.getValue)
+
+                        console.log("message:", msg)
                     }
                 }
             })
@@ -63,7 +63,6 @@ export class ChatPage extends Block {
     }
 
     sendMsgHandler() {
-        console.log("validate msg")
         messageInput.validateInput();
     }
 

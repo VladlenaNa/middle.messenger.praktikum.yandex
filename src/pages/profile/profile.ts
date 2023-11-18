@@ -3,7 +3,6 @@ import { tmpl } from "./profile.tmpl";
 import ProfileForm from "./../../partials/profile";
 import ProfileHeader from "./../../partials/profileHeader"
 import { renderDOM } from "../../core/renderDOM";
-import "../../styles.scss";
 
 export class ProfilePage extends Block {
     constructor() {

@@ -3,7 +3,6 @@ import { tmpl } from "./editProfile.tmpl";
 import ProfileForm from "./../../partials/profile";
 import Button from "./../../partials/button";
 import ProfileHeader from "./../../partials/profileHeader"
-import "../../styles.scss";
 import { renderDOM } from "../../core/renderDOM";
 
 export class EditProfilePage extends Block {

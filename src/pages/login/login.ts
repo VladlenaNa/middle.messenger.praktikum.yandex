@@ -3,7 +3,6 @@ import { tmpl } from "./login.tmpl";
 import Button from "./../../partials/button";
 import { inputs, iLoginInputs } from "./loginInputs";
 import { renderDOM } from "../../core/renderDOM";
-import "../../styles.scss";
 
 export class LoginPage extends Block {
     constructor() {

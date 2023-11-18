@@ -5,7 +5,6 @@ import Button from "./../../partials/button";
 import { inputs, iEditPasswordInputs } from "./editPasswordInputs"
 import { inputErrorMsgs } from "../../utils/constants";
 import { renderDOM } from "../../core/renderDOM";
-import "../../styles.scss";
 
 export class EditPasswordPage extends Block {
     constructor() {

@@ -13,7 +13,6 @@ export default class InputControler extends Block {
     }
 
     public validateInput() {
-        console.log("validaye")
         const eValidationType = this.validationType;
         
         const rule = validationRules[eValidationType];
