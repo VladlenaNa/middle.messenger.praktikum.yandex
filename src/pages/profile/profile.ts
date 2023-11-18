@@ -1,8 +1,10 @@
 import Block from "../../core/Block";
 import { tmpl } from "./profile.tmpl";
 import ProfileForm from "./../../partials/profile";
-import ProfileHeader from "./../../partials/profileHeader"
+import Button from "./../../partials/button";
+import ProfileHeader from "./../../partials/profileHeader";
 import { renderDOM } from "../../core/renderDOM";
+import backButton from "../../image/backButton.svg"
 
 export class ProfilePage extends Block {
     constructor() {
@@ -10,7 +12,11 @@ export class ProfilePage extends Block {
             profileForm: new ProfileForm({
                 disabled: true
             }),
-            profileHeader: new ProfileHeader()
+            profileHeader: new ProfileHeader(),
+            backButton: new Button({
+                classes: "back-button",
+                imgSrc: backButton
+            })
         });
     }
 

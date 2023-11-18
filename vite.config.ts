@@ -3,7 +3,7 @@ import { defineConfig } from "vite"
 import handlebars from "vite-plugin-handlebars";
 import checker from "vite-plugin-checker";
 import eslint from "vite-plugin-eslint";
-import svgLoader from 'vite-svg-loader';
+import svgLoader from "vite-svg-loader";
 // import { fileURLToPath } from "url";
 
 // const __filename = fileURLToPath(import.meta.url)
@@ -20,7 +20,7 @@ export default defineConfig({
         }),
         eslint(),
         svgLoader({
-            defaultImport: 'url'
+            defaultImport: "url"
         })
     ],
     server: {

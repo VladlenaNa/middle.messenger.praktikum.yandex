@@ -6,7 +6,7 @@ export const tmpl = `
                 {{{profileForm}}}
             </div>
             <div class="profile__footer">
-                <img class="backButton" src="/image/backButton.svg" alt="back">
+                {{{backButton}}}
                 {{{saveButton}}}
             </div>
         </div>

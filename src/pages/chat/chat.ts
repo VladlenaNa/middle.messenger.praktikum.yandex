@@ -8,6 +8,8 @@ import Input from "./../../partials/input";
 import { renderDOM } from "../../core/renderDOM";
 import Button from "./../../partials/button";
 import Message from "./../../partials/message";
+import sendButton from "../../image/sendButton.svg";
+import attachButton from "../../image/attach.svg";
 
 const messageInput = new Input({
     class: "inputChat-field",
@@ -46,6 +48,7 @@ export class ChatPage extends Block {
             msg2,
             sendButton: new Button({
                 classes: "sendMsg-button",
+                imgSrc: sendButton,
                 events: {
                     click: () => {
                         const msg = messageInput.getValue();
@@ -57,7 +60,11 @@ export class ChatPage extends Block {
                         console.log("message:", msg)
                     }
                 }
-            })
+            }),
+            attachButton: new Button({
+                classes: "attach-button",
+                imgSrc: attachButton,
+            }),
         });
     }
 

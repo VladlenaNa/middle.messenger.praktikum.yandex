@@ -12,7 +12,7 @@ export const tmpl = `
 
                 {{{saveButton}}}
             </form>
-            <img class="backButton" src="/image/backButton.svg" alt="back">
+            {{{backButton}}}
         </div>
     </div>
 

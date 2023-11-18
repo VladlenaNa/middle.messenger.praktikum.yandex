@@ -4,6 +4,7 @@ import ProfileForm from "./../../partials/profile";
 import Button from "./../../partials/button";
 import ProfileHeader from "./../../partials/profileHeader"
 import { renderDOM } from "../../core/renderDOM";
+import backButton from "../../image/backButton.svg";
 
 export class EditProfilePage extends Block {
     constructor() {
@@ -15,8 +16,12 @@ export class EditProfilePage extends Block {
             saveButton: new Button({
                 classes: "button__solid saveButton",
                 text: "Сохранить",
+            }),
+            backButton: new Button({
+                classes: "back-button",
+                imgSrc: backButton
             })
-        });
+        })
     }
 
     render() {

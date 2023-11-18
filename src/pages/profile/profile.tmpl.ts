@@ -10,7 +10,7 @@ export const tmpl:string = `
             <div class="profile__footer">
                 <ul>
                     <li class="link">
-                        <img src="/image/backButton.svg" alt="back">
+                        {{{backButton}}}
                     </li>
                     <li class="link">
                         <a href="">Изменить данные</a>

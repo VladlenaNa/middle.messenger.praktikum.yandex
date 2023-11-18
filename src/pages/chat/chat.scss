@@ -78,8 +78,8 @@
                 cursor: pointer;
             }
 
-            .sendMsg-button {
-                background: url('@/src/images/sendButton.svg?url');
+            .sendMsg-button, .attach-button {
+                background: none;
                 border: transparent;
                 width: 30px;
             }

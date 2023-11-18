@@ -5,6 +5,7 @@ import Button from "./../../partials/button";
 import { inputs, iEditPasswordInputs } from "./editPasswordInputs"
 import { inputErrorMsgs } from "../../utils/constants";
 import { renderDOM } from "../../core/renderDOM";
+import backButton from "../../image/backButton.svg"
 
 export class EditPasswordPage extends Block {
     constructor() {
@@ -16,8 +17,12 @@ export class EditPasswordPage extends Block {
                 text: "Сохранить",
                 type: "submit",
                 events: {
-                    click: (event) => this.handlePassword(event)
+                    click: (event: Event) => this.handlePassword(event)
                 }
+            }),
+            backButton: new Button({
+                classes: "back-button",
+                imgSrc: backButton
             })
         });
     }
