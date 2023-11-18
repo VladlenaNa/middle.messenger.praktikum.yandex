@@ -3,7 +3,7 @@ declare module "*.hbs" {
     export default tpl
 }
 
-declare module '*.svg' {
+declare module "*.svg" {
     const content: string;
     export default content;
 }

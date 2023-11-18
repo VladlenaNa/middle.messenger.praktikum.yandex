@@ -1,4 +1,4 @@
-import { HelperOptions } from 'handlebars';
+import { HelperOptions } from "handlebars";
 
 export default function card(this: object, { fn }: HelperOptions): string {
     return `
