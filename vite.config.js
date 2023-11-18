@@ -1,4 +1,3 @@
-<<<<<<< HEAD:vite.config.ts
 import { resolve } from "path";
 import { defineConfig, Plugin } from "vite"
 // import handlebars from "vite-plugin-handlebars";
@@ -8,21 +7,10 @@ import eslint from "vite-plugin-eslint";
 
 // const __filename = fileURLToPath(import.meta.url)
 // const __dirname =  dirname(__filename);
-=======
-import { resolve, dirname} from 'path';
-import { defineConfig } from 'vite'
-import handlebars from 'vite-plugin-handlebars';
-import card from "./src/layouts/card/card";
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname =  dirname(__filename);
->>>>>>> main:vite.config.js
 
 export default defineConfig({
     root: resolve(__dirname, "src"),
     plugins: [
-<<<<<<< HEAD:vite.config.ts
         // handlebars({
         //     partialDirectory: resolve(__dirname, "src/partials"),
         // }) as unknown as Plugin,
@@ -30,14 +18,6 @@ export default defineConfig({
             typescript: true
         }),
         eslint()
-=======
-        handlebars({
-            partialDirectory: resolve(__dirname, 'src/partials'),
-            helpers: {
-                card,
-            },
-        }),
->>>>>>> main:vite.config.js
     ],
     server: {
         port: 3000,
