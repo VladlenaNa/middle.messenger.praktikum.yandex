@@ -1,9 +1,9 @@
 export const validationRules: Record<string, RegExp> = {
     login: /^[0-9a-zA-Z\-_]{3,20}/,
     password: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,40}$/,
-    phone: /^[+]?\d/,
-    // email: /^[^\s@]+@[^\s@]+\.[\S]{2,}*$/,
-    // firstName: /^(?=[A-ZА-Я])[A-Za-zА-Яа-я-]*$/,
+    phone: /^[+]?\d{10,15}$/,
+    email: /^\S+@\S+\.\S+$/,
+    firstName: /^(?=[A-ZА-Я])[A-Za-zА-Яа-я-]*$/,
     message: /.+/,
     oldPassword:  /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,40}$/,
     newPassword:  /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,40}$/,

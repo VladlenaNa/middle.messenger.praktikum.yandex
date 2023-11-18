@@ -12,16 +12,16 @@
 }
 
 .input-error {
-    color: rgb(195 0 0);
+    color: var(--error);
 }
 
 .error-input {
-    border: 1px solid rgb(144 0 0);
+    border: var(--error);
     border-radius: 5px;
 }
 
 .error-msg {
-    color: rgb(114 0 0);
+    color: var(--error);
     font-size: 12px;
 }
 

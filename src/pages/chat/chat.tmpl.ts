@@ -21,7 +21,7 @@ export const tmpl = `
                 {{{msg2}}}
             </div>
             <div class="chat__footer">
-                <img class="attachButton" src="/image/attach.svg" width="30" height="30" alt="attach">
+                <img class="attachButton" :src="src/image/attachButton.svg" width="30" height="30" alt="attach">
                 {{{messageInput}}}
                 {{{sendButton}}}
             </div>

@@ -46,7 +46,6 @@ export class ChatPage extends Block {
             msg2,
             sendButton: new Button({
                 classes: "sendMsg-button",
-                imgSrc: "/image/sendButton.svg",
                 events: {
                     click: () => {
                         const msg = messageInput.getValue();
