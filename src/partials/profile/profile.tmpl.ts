@@ -1,5 +1,5 @@
 export const tmpl = `
-    <form class="inputsProfile">
+    <form class="inputsProfile" id="editProfile-form">
         <label>
             {{{emailInput}}}
             <span class="input-span">Email</span>
@@ -29,5 +29,9 @@ export const tmpl = `
             {{{phoneInput}}}
             <span class="input-span">Телефон</span>
         </label>
+
+        {{#unless disabled}} 
+            {{{saveButton}}}
+        {{/unless}}
     </form>
 `

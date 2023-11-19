@@ -7,7 +7,6 @@ export const tmpl = `
             </div>
             <div class="profile__footer">
                 {{{backButton}}}
-                {{{saveButton}}}
             </div>
         </div>
     </div>

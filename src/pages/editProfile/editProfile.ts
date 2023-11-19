@@ -13,10 +13,7 @@ export class EditProfilePage extends Block {
                 disabled: false
             }),
             profileHeader: new ProfileHeader(),
-            saveButton: new Button({
-                classes: "button__solid saveButton",
-                text: "Сохранить",
-            }),
+           
             backButton: new Button({
                 classes: "back-button",
                 imgSrc: backButton

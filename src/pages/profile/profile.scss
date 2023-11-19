@@ -7,7 +7,7 @@
     align-items: center;
 
     .profile__inputs-wrapper {
-        width: 600px;
+        width: 350px;
         margin-top: 60px;
     }
 
@@ -17,9 +17,13 @@
 
     .profile__footer {
         ul {
-            margin: 20px 0 0;
+            margin: 0px 0 0;
             padding: 0;
             list-style-type: none;
+
+            .back-button {
+                padding: 0;
+            }
 
             li {
                 padding: 5px 0;
