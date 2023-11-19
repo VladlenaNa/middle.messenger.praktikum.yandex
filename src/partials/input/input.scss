@@ -1,5 +1,4 @@
 .input-field {
-    width: 320px;
     border: none;
     background-color: transparent;
     width: 100%;
@@ -9,5 +8,33 @@
     color: var(--text-primary);
     font-weight: 500;
     line-height: 13px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.input-error {
+    color: var(--error);
+}
+
+.error-input {
+    border: var(--error);
+    border-radius: 5px;
+}
+
+.error-msg {
+    color: var(--error);
+    font-size: 12px;
+}
+
+.inputChat-field {
+    height: 30px;
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid var(--borderChatInput);
+    padding-bottom: 7px;
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 13px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 14px;
 }

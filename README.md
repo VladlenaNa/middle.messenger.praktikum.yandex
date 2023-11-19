@@ -2,7 +2,7 @@
 [макет](https://www.figma.com/file/uoq5VyszUg8GMizJu7M5vy/Chat_external_link-(Copy)?type=design&node-id=1-515&mode=design&t=Bqps3lqNPZ55Ff9I-0)
 [Netlify link](https://delicate-frangollo-1e7f09.netlify.app)
 
-Проект является учебным в рамках курса от Яндекс Практикума. 
+Проект является учебным в рамках курса от Яндекс Практикума. Настроены линтеры(eslint и stylelint)
 
 Стэк:
 - Typescript

@@ -1,13 +1,10 @@
-
-import express from 'express';
-import { resolve } from 'path';
+import express from "express";
 
 const app = express();
 const PORT = 3000;
-const __dirname = resolve();
 
-app.use(express.static(resolve(__dirname, 'src')));
+app.use(express.static("./dist"));
 
-app.listen(PORT, function () {
-  console.log(`Example app listening on port ${PORT}!`);
+app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}!`);
 });

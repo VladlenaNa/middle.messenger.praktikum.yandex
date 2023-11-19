@@ -1,17 +1,21 @@
 .menu {
     width: 100%;
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
     
     a {
-        color: rgb(255, 255, 255);
+        color: rgb(255 255 255);
         text-decoration: none;
         cursor: pointer;
     }
 
-    img {
+    .profile-button {
+        border: none;
+        width: 30px;
+        height: 40px;
+        background: none;
         cursor: pointer;
         margin-left: 5px;
     }

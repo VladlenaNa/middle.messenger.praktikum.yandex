@@ -9,11 +9,17 @@
 .button__solid {
     border: none;
     background-color: var(--button-color);
-    color: var(--solid-buton-color);
+    color: var(--solid-button-color);
 }
 
 .button__outline {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255 255 255);
     border: 1px solid var(--button-color);
     color: var(--button-color);
+}
+
+.back-button {
+    background: none;
+    width: 30px;
+    border: none;
 }
